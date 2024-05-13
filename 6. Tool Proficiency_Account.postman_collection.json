@@ -75,7 +75,7 @@
 					"mode": "urlencoded",
 					"urlencoded": [
 						{
-							"key": "id",
+							"key": "username",
 							"value": "qa_account_001",
 							"type": "text"
 						},
@@ -164,7 +164,7 @@
 					"mode": "urlencoded",
 					"urlencoded": [
 						{
-							"key": "id",
+							"key": "username",
 							"value": "qa_account_001",
 							"type": "text"
 						},
@@ -263,7 +263,7 @@
 					"mode": "urlencoded",
 					"urlencoded": [
 						{
-							"key": "id",
+							"key": "username",
 							"value": "qa_account_001",
 							"type": "text"
 						},
