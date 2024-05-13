@@ -1,40 +1,23 @@
-Summary: User is allowed to register with the exactly same information
-Description:
-[Pre-Condition]
-Account is created with following information 
-- username: qa_account_001
-- email: qa_account_001@gmail.com
+Project: Account Service
+1. Issue Type: Bug
+2. Summary: User Registration Allows Duplicate Accounts (High Severity)
 
-[Reproduce Steps]
-1. Open Web browser and move to http://13.209.85.69/
-2. Attempt to register with exactly the same account which is already been registered
+2. Description: This bug allows users to register for multiple accounts with the same username and email address. This creates a security risk and breaks data integrity.
 
-[Expected Result]
-User should be informed that the account is already been registered
+3. Steps to Reproduce:
+- Open a web browser and navigate to http://13.209.85.69/
+- Click on the "Register" or "Sign Up" link.
+- Enter the following information in the registration form:
+- Username: Existing Username (e.g., qa_account_001)
+- Email: Existing Email Address (e.g., qa_account_001@gmail.com) - Already associated with an existing account
+- Password: This can be any valid password (e.g., Password123!)
+- Re-enter Password (if applicable)
+- Any other required information for registration
+- Submit the registration form.
+- Expected Result: The registration process should fail, and the user should be presented with an error message indicating that the username or email address is already registered.
+- Actual Result: The registration process is successful, and a new account is created with the duplicate username and email address.
+- Priority: High (This bug is a high security risk and should be addressed immediately)
+- Attachments: video_duplicate_registration.mp4 (Attach the video demonstrating the bug)
 
-[Actual Result]
-User is allowed to register with the exactly same information
-
-[Environment]
-Production
-
-[Reproduce Ratio]
-5/5 (100%)
-
-[Test Device]
-Windows, Chrome 124.0.6367.201
-
-[Affected Versions]
-API v1.0
-
-[Account]
-qa_account_001@gmail.com
-
-[Severity]
-Blocker
-
-[Proirity]
-Highest
-
-[Attachment]
-Refer to attached video clip account_duplicated_registration.mp4
+4. Additional Notes: We need to implement validation logic on BE side to prevent duplicate user registrations based on username and email. This bug report outlines a critical issue in the user registration process. 
+We would like to address this promptly as it is crucial for maintaining a secure and reliable user account system.
