@@ -1,0 +1,13 @@
+[Scenario]
+You are part of a QA team that is transitioning from manual to automated testing.
+However, some team members are resistant to this change, citing a lack of experience in
+programming
+
+[Task]
+I would like to deal with automation testing approach within team
+
+- Highlight benefits by explaining how automation frees up time for more exploratory testing, early stage dicovery.
+- Start small and simple: we can begin with automating repetitive tasks like logins or basic but core functionalities of its service
+- Focus on tools but not programming skill-sets: There are many automation tools have user-friendly interfaces that require minimal coding knowledge such as Cypress/Playwright.
+- Organize training session: Organizing training sessions can help QA engineers to be on next level and to help automation eventually and allowing them to gain more experiences.
+- Start community: Encourage knowledge sharing within the team. Let experienced QA mentor others

@@ -1,0 +1,35 @@
+[Scenario]
+You are given a basic cloud service that is the entry point for our mobile app. This
+service is responsible for signing up and signing in users and related helper functionalities. This
+application is expected to handle up to 10,000 concurrent users during peak hours.
+
+[Task]
+1. Objectives
+- Measure Maximum Load Handling: Determine the maximum number of concurrent users the cloud service can handle before experiencing performance degradation.
+- Evaluate Response Time Under Load: Assess the average response time for user sign-up, sign-in, and other functionalities under varying load conditions.
+- Identify bottlenecks: Pinpoint any potential bottlenecks in the system that could affect performance.
+
+2. Tools: JMeter
+We would like to utilize JMeter for performance testing tool for following reasons
+- JMeter is open-source, and cost-effective option
+- Scalability: JMeter can handle a large number of concurrent users, ideal for load test
+- Flexibility: We can create complex test scenarios through JMeter, scripting and plugins
+
+3. Test cases
+- Test Case 1 (User Sign-up and Sign-in): Simulate a scenario where users sign up and sign in concurrently. Monitor response times and success rates for both actions.
+- Test Case 2 (Concurrent Logins): Simulate a high number of concurrent access to login service simultaneously. Record the response time for login attempts to identify any potential bottlenecks related to authentication.
+- Test Case 3 (Basic User Actions): Simulate users accessing basic functionalities like profile updates or password resets under high loads to identify any performance issues in specific functionalities.
+
+4. Metrics
+- Response time: Average time server response time to user requests.
+- Failure rate: The percentage of user requests that fails
+- Resource utilization: Work together with Dev. Ops team to monitor CPU, memory, and network utilization on the cloud services to identify potential resource allocation issues.
+
+5. Test Environment
+- We would like to set up test environment which close to Production cloud environment to compare its result.
+- We need to configure JMeter to simulate user traffics from various locations to identify potential network latency caused by dynamic locations.
+
+6. Analysis
+- We can now then analyze the collected metrics to identify performance issue, if it is in acceptable range then we can store it as standard for performance test.
+- We can use the results to determine the maximum concurrent access the cloud service can serve.
+- Identify areas for improvement based on finding and work together with development team to improve its coverage

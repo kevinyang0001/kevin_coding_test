@@ -1,0 +1,40 @@
+Summary: User is allowed to register with the exactly same information
+Description:
+[Pre-Condition]
+Account is created with following information 
+- username: qa_account_001
+- email: qa_account_001@gmail.com
+
+[Reproduce Steps]
+1. Open Web browser and move to http://13.209.85.69/
+2. Attempt to register with exactly the same account which is already been registered
+
+[Expected Result]
+User should be informed that the account is already been registered
+
+[Actual Result]
+User is allowed to register with the exactly same information
+
+[Environment]
+Production
+
+[Reproduce Ratio]
+5/5 (100%)
+
+[Test Device]
+Windows, Chrome 124.0.6367.201
+
+[Affected Versions]
+API v1.0
+
+[Account]
+qa_account_001@gmail.com
+
+[Severity]
+Blocker
+
+[Proirity]
+Highest
+
+[Attachment]
+Refer to attached video clip account_duplicated_registration.mp4

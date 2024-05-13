@@ -1,0 +1,23 @@
+[Scenario]
+During a release cycle, you find that the number of bugs reported in the new
+features is significantly higher than in the previous releases. The development team claims that
+the features were developed according to specifications.
+
+[Task]
+A high number of bugs in new release compared to previous releases requires a root cause analysis to identify the root cause and prevent future occurrences, I would like to approach
+
+1. Gather Information through,
+- Bug Reports: Analyze the bug reports for the new features. Look for patterns in the types of bugs, affected functionalities, and specific areas within the code.
+- QA Process review: Review the QA process for the new features. Check if there were any deviations from standard practices in integration testing or TC management.
+- Communication: Meet with the development team to understand their perspective. Discuss if they encountered any challenges during development, and how they addressed them.
+
+2. Root Cause Analysis based on the information collected,
+- Reproducibility: Can QA reproduce issues? if then run through tests with various environmental chracteristics and then to improve its TCs
+- Testing Coverage: Do we have TCs ready and execution records available? if not let's add them
+
+3. Address the Issues by
+- Improve Testing Coverage: If testing gaps are identified, implement them and consider additional test cases, exploratory testing, or automated testing to cover edge cases.
+- Simplify TCs: Break down complex TCs into smaller, more manageable size.
+- Improve Communication: Clear communication channels between development teams, QA.
+
+Eventually, we can organize training session and share the knowledge bases within team, so that everyone in the team follows the standard and to improve the process over and over

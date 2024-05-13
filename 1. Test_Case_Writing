@@ -1,0 +1,17 @@
+1. Functional test tests
+- TC_01_Valid_Registration: Input valid information (unique username, strong password, valid email) and submit the form and verify successful account creation through network response in browser.
+- TC_02_Existing_Account: Attempt to register with an already existing account. Verify an error message is displayed indicating the account is already been registered.
+- TC_03_Weak_Password: Attempt to register with a weak password (e.g. short or without special characters) and verify an error message is displayed
+- TC_04_Invalid_Email: Attempt to register with an invalid email format (e.g. missing `@` symbol) and verify an error message is displayed.
+- TC_05_Empty_Fields: Submit the form with all fields left empty and verify error messages are displayed for mandatory fields
+- TC_06_Subscribe_Checkbox: Verify that checking/unchecking the "Subscribe to newsletter" checkbox does not affect successful registration
+
+2. Boundary test tests
+- TC_07_Username_Length: Register with usernames at the minimum (5) allowed character lengths and verify successful registration.
+- TC_08_Password_Length: Register with passwords at the minimum (8) allowed character lengths and verify successful registration.
+TC_09_Email_Length: Register with emails at the long and short allowed character lengths and verify successful registration.
+
+3. Edge test tests
+- TC_10_Special_Characters: Register with a username including special characters allowed by the system (e.g. underscores, periods) and verify successful registration.
+- TC_11_International_Characters: Attempt to register with a username containing characters from non-alphabets and verify the system handles the characters appropriately.
+- TC_12_Case_Sensitivity: Register with a username containing mixed case letters and verify the system store the username case-sensitively.
